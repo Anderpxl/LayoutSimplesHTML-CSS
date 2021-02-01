@@ -1,0 +1,160 @@
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-style: Arial;
+}
+
+.cabecalho{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(214, 12, 12);
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 30px;
+}
+
+.menu-header{
+    display: flex;
+}
+
+.menu-header .item{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.menu-header .item a{
+    display: block;
+    padding: 5px;
+    color: white;
+    font-size: 27px;
+}
+
+.menu-header a:hover{
+    color: black;
+}
+
+.grid-main{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    grid-template-rows: auto;
+    grid-template-areas: "m1 m2 m3";
+}
+
+.grid-main .lateral-esquerda{
+    grid-area: m1;
+    background: black;
+    margin-left: 99.9%;
+}
+
+.grid-main .centro{
+    grid-area: m2;
+    background: white;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 40px;
+}
+
+.centro .titulo{
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.centro .imagem-centro{
+    margin-left: 25%;
+    margin-bottom: 15px;
+    width: 50%;
+    height: 30%;
+}
+
+.centro .frase{
+    margin: 30px;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.centro .imagem{
+    width: 50%;
+    margin-left: 25%;
+    height: 350px;
+}
+
+.centro .materia{
+    margin-bottom: 50px;
+}
+
+.centro .materia .titulo{
+    margin-top: 40px;
+}
+
+.centro .materia .titulo-materia{
+    font-size: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+}
+
+.centro .materia .imagem{
+    margin-bottom: 5px;
+    width: 80%;
+    height: 500px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.centro .materia .frase{
+    margin-top: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 25px;
+}
+
+.grid-main .lateral-direita{
+    grid-area: m3;
+    background: black;
+    margin-right: 99.7%;
+}
+
+.rodape{
+    background:rgb(214, 12, 12);
+    max-width: 100%;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: 30px;
+}
+
+.titulo-footer{
+    margin: auto;
+}
+
+.redes{
+    width: 100%;
+    margin: 15px;
+}
+
+.redes p{
+    margin-left: 15px;
+}
+
+.footer .direitos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
